@@ -1,12 +1,11 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
 char square[10]={'0','1','2','3','4','5','6','7','8','9'};
 void DrawBoard()
 {
 	system("cls");
-	cout<<"\n\n\tTIC TAC TOE\n\n";
-	cout<<"PLAYER 1(X)-PLAYER 2(O)\n\n";
+	cout<<"\n\n\tTIC TAC TOE\n";
+	cout<<"PLAYER 1(X)-PLAYER 2(O)\n";
 	cout<<"     |     |     "<<endl;
 	cout<<"  "<<square[1]<<"  |  "<<square[2]<<"  |  "<<square[3]<<endl;
 	cout<<"-----|-----|-----"<<endl;
@@ -80,7 +79,7 @@ int check()
 	}while(i==-1);
 	 DrawBoard();
 	 if(i==1)
-	 cout<<"Player "<<--player<<" wins"<<endl;
+	 cout<<"Wooooooh! Player "<<--player<<" wins"<<endl;
 	 else
 	 cout<<"Match Draw";
 }
